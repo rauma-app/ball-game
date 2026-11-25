@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ball Race — Creator Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app">
+    <section id="setup" class="screen">
+      <div class="brand">BALL<span>RACE</span></div>
+      <p class="eyebrow">CREATOR DEMO</p>
+      <h1>Build your race.</h1>
+      <p class="sub">Tambah peserta, masukkan foto, beri label, lalu buat race sinematik untuk direkam.</p>
+
+      <div id="participants" class="participants"></div>
+
+      <div class="setup-actions">
+        <button id="addBtn" class="ghost">＋ Add Ball</button>
+        <button id="startBtn" class="primary">Start Race <span>→</span></button>
+      </div>
+      <p class="hint">Demo khusus creator · 2–8 peserta · foto dipotong otomatis menjadi lingkaran.</p>
+    </section>
+
+    <section id="race" class="screen hidden">
+      <canvas id="game"></canvas>
+      <div class="hud">
+        <div class="race-title">BALL RACE <small>CREATOR DEMO</small></div>
+        <div id="status" class="status">READY</div>
+      </div>
+      <div id="countdown" class="countdown"></div>
+      <div id="winner" class="winner hidden"></div>
+      <button id="backBtn" class="back">← Setup</button>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
